@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF2152D36DFE848C667CA420 /* Pods_ToDoListApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB4058466DFECE4E52D9DB3 /* Pods_ToDoListApp.framework */; };
 		FAB821E226E2B0660059646B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB821E126E2B0660059646B /* AppDelegate.swift */; };
 		FAB821E426E2B0660059646B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB821E326E2B0660059646B /* SceneDelegate.swift */; };
 		FAB821E926E2B0660059646B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB821E726E2B0660059646B /* Main.storyboard */; };
@@ -22,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22B255218177F1701612C25C /* Pods-ToDoListApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListApp.release.xcconfig"; path = "Target Support Files/Pods-ToDoListApp/Pods-ToDoListApp.release.xcconfig"; sourceTree = "<group>"; };
+		9E9A3BC8E0E7B2FC30692B07 /* Pods-ToDoListApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoListApp.debug.xcconfig"; path = "Target Support Files/Pods-ToDoListApp/Pods-ToDoListApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CDB4058466DFECE4E52D9DB3 /* Pods_ToDoListApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoListApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB821DE26E2B0660059646B /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB821E126E2B0660059646B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB821E326E2B0660059646B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,17 +47,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2152D36DFE848C667CA420 /* Pods_ToDoListApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		508B30D6A8E77F6184955BD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E9A3BC8E0E7B2FC30692B07 /* Pods-ToDoListApp.debug.xcconfig */,
+				22B255218177F1701612C25C /* Pods-ToDoListApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8440F59EB3FB8F93D43E6970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDB4058466DFECE4E52D9DB3 /* Pods_ToDoListApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAB821D526E2B0660059646B = {
 			isa = PBXGroup;
 			children = (
 				FAB821E026E2B0660059646B /* ToDoListApp */,
 				FAB821DF26E2B0660059646B /* Products */,
+				508B30D6A8E77F6184955BD9 /* Pods */,
+				8440F59EB3FB8F93D43E6970 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAB821F226E2B0670059646B /* Build configuration list for PBXNativeTarget "ToDoListApp" */;
 			buildPhases = (
+				D6FB600CE75093BB6F39E638 /* [CP] Check Pods Manifest.lock */,
 				FAB821DA26E2B0660059646B /* Sources */,
 				FAB821DB26E2B0660059646B /* Frameworks */,
 				FAB821DC26E2B0660059646B /* Resources */,
+				BCF0B428AF8C0806400F77AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +200,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BCF0B428AF8C0806400F77AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoListApp/Pods-ToDoListApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoListApp/Pods-ToDoListApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDoListApp/Pods-ToDoListApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6FB600CE75093BB6F39E638 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDoListApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAB821DA26E2B0660059646B /* Sources */ = {
@@ -331,6 +400,7 @@
 		};
 		FAB821F326E2B0670059646B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9A3BC8E0E7B2FC30692B07 /* Pods-ToDoListApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -350,6 +420,7 @@
 		};
 		FAB821F426E2B0670059646B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B255218177F1701612C25C /* Pods-ToDoListApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

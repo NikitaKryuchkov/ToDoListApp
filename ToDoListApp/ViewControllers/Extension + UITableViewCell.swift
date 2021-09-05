@@ -5,7 +5,7 @@
 //  Created by Nikita Kryuchkov on 03.09.2021.
 //
 
-import Foundation
+import UIKit
 
 extension UITableViewCell {
     func configure(with taskList: TaskList) {

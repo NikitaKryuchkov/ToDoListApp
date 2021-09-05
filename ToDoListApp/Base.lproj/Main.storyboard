@@ -22,6 +22,9 @@
                                 <segment title="First"/>
                                 <segment title="Second"/>
                             </segments>
+                            <connections>
+                                <action selector="sortingList:" destination="4cT-rq-Ogz" eventType="valueChanged" id="rJn-Bg-krS"/>
+                            </connections>
                         </segmentedControl>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskListCell" textLabel="efp-vL-ISS" detailTextLabel="Wv1-g2-DLh" style="IBUITableViewCellStyleValue1" id="Otg-Jn-8pL">
@@ -58,7 +61,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tasks List" id="83s-TI-wY8">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Zlc-Oy-FXa"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Zlc-Oy-FXa">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="4cT-rq-Ogz" id="Od2-5T-LDs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1D-UY-iG5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
